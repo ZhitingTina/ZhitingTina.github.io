@@ -27,6 +27,8 @@
         #list-example {
             background-color: #bcf5f5;
             position: fixed;
+            top: 0;
+            width: 100%;
         }
 
         a.list-group-item list-group-item-action {
@@ -113,14 +115,17 @@
         h1 {
             color: aliceblue;
         }
+
+        @media all (min-width: 70px) {
+            border: red solid 3px;
+        }
     </style>
 </head>
 
 <body>
     <div id="list-example" class="list-group">
-        <a href="" id="nav-t">Navbar</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-1">Tina Yang </a>
-        <a class="list-group-item list-group-item-action" href="#list-item-1">Introduction </a>
+        <a class="list-group-item list-group-item-action" href="">Tina Yang </a>
+        <a class="list-group-item list-group-item-action" href="#intro">Introduction </a>
         <a class="list-group-item list-group-item-action" href="#list-item-2">Hobbys </a>
         <a class="list-group-item list-group-item-action" href="#list-item-3">Buisness </a>
         <a class="list-group-item list-group-item-action" href="#list-item-4">Awards</a>
@@ -145,7 +150,7 @@
 
         <h1 id="list-item-3">Buisness
             <br>
-            <p id='b'>For now I am CTO of Y&Y Consulting GmbH from my mother, but in the future, I might be something else. If you want to design a website, but need help, write me a message to : <a href="mailto: zhiting.yang.05@gmail.com" id="mail">zhiting.yang.05@gmail.com</a>
+            <p id='b'>For now I am CTO of Y&amp;Y Consulting GmbH from my mother, but in the future, I might be something else. If you want to design a website, but need help, write me a message to : <a href="mailto: zhiting.yang.05@gmail.com" id="mail">zhiting.yang.05@gmail.com</a>
             </p>
         </h1>
 
